@@ -1,0 +1,17 @@
+<h1>
+  <span>Nome:</span>
+  <%= @book.name %>
+</h1>
+
+<p>
+  <span>Autor:</span>
+  <%= @book.author %>
+</p>
+
+<p>
+  <span>Descrição:</span>
+  <%= @book.description %>
+</p>
+
+<%= link_to 'Editar', edit_book_path(@book) %> |
+<%= link_to 'voltar', books_path %>
